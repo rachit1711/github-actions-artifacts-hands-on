@@ -33,4 +33,8 @@ jobs:
           path: ./artifacts
 
       - name: Display content of the text file
-        run: cat ./artifacts/hello.txt
+        timeout-minutes: 1
+        run: |
+          cat ./artifacts/hello.txt
+          sleep 6000s
+
